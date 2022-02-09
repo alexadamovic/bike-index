@@ -1,4 +1,4 @@
-# Bike Index
+# Bike Lookup
 
 #### Search for stolen bikes in the area
 
@@ -20,12 +20,14 @@
 
 ## Description
 
-Welcome to our week 3 two-day project with Intermediate JavaScript at
+Welcome to our first two-day project in week 3 of Intermediate JavaScript at
 [Epicodus](https://epicodus.com).
 
 We started it on Wednesday February 9th 2022 from [this project's
 lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/martian-weather-bike-index-api-of-choice-two-day-project)
 in the [curriculum](https://learnhowtoprogram.com/).
+
+This project uses the [Bike Index API](https://github.com/bikeindex/bike_index).
 
 You can find more of our work at:
 
@@ -96,7 +98,7 @@ License](https://choosealicense.com/licenses/isc). See the file called
 this same folder for distribution and liability terms as well as
 copyright holder info.
 
-_Third-party packages are subject to their own license and copyright._
+_Third-party APIs and packages are subject to their own license and copyright._
 
 ## Contact Information
 
