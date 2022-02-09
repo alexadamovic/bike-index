@@ -17,7 +17,7 @@ function getElements(response) {
   } else if (response.bikes) {
     $('#show-bikes').text(`The last bike that was stolen in your zipcode is a ${response.bikes[0].frame_colors.toString()} ${response.bikes[0].frame_model} ${response.bikes[0].manufacturer_name}`);
   } else {
-    $('#show-bikes').text(`Oopsie! Something went wrong on our end.`);
+    $('#show-errors').text(`Oopsie! Something went wrong on our end.`);
   }
 }
 
@@ -25,9 +25,13 @@ $(document).ready(function() {
   $('#bike-search').click(function() {
     let zip = $('#zip-code').val();
     clearFields();
-    BikeIndex.getBikes(zip)
-      .then(function(response) {
-        getElements(response);
-      });
+    if (zip.length === 5) {
+      BikeIndex.getBikes(zip)
+        .then(function(response) {
+          getElements(response);
+        });
+    } else {
+      $('#show-errors').text(`We need a 5 digit zipcode to process this request.`);
+    }
   });
 });
